@@ -6,7 +6,7 @@
 /*   By: qlouisia <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 16:34:13 by qlouisia          #+#    #+#             */
-/*   Updated: 2018/11/20 18:05:24 by qlouisia         ###   ########.fr       */
+/*   Updated: 2018/11/20 18:28:53 by qlouisia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,14 +73,15 @@ char			**ft_strsplit(char const *s, char c)
 {
 	char	**tab;
 	int		i;
+	int		n;
 
 	if ((!s) || (!c))
 		return (NULL);
 	i = 0;
-	tab = NULL;
+	n = count_word((char*)s, c);
 	if (!(tab = (char**)malloc(sizeof(char *) * count_word((char *)s, c) + 1)))
 		return (NULL);
-	while ((*s != '\0') && (i < (count_word((char*)s, c))))
+	while ((*s != '\0') && i < n)
 	{
 		while (*s == c)
 			s++;
