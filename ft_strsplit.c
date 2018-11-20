@@ -6,7 +6,7 @@
 /*   By: qlouisia <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/14 16:34:13 by qlouisia          #+#    #+#             */
-/*   Updated: 2018/11/19 17:01:34 by qlouisia         ###   ########.fr       */
+/*   Updated: 2018/11/20 16:40:22 by qlouisia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,7 +90,7 @@ char			**ft_strsplit(char const *s, char c)
 		{
 			if (!(tab[i++] = ft_strndup2((char **)&s, c)))
 			{
-				free(s2);
+				free(tab**);
 				return (NULL);
 			}
 		}
