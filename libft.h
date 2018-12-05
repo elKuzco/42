@@ -6,13 +6,27 @@
 /*   By: qlouisia <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 11:42:52 by qlouisia          #+#    #+#             */
-/*   Updated: 2018/11/19 11:44:50 by qlouisia         ###   ########.fr       */
+/*   Updated: 2018/12/05 12:01:03 by qlouisia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
+# define BUFF_SIZE 256
+
+typedef enum		e_bool
+{
+	false,
+	true,
+}					t_bool;
+
+typedef struct		s_lst
+{
+	char			*str;
+	int				fd;
+	struct s_lst	*next;
+}					t_list_gnl;
 
 typedef struct		s_list
 {
@@ -86,4 +100,5 @@ int					ft_get_int_size(long long int n);
 int					ft_power(long int nb, int power);
 int					ft_list_len(t_list **alst);
 int					lst_search(t_list **alst, void *content, size_t len);
+int					get_next_line(const int fd, char **line);
 #endif

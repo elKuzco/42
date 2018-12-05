@@ -6,7 +6,7 @@
 #    By: qlouisia <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/11/08 15:25:57 by qlouisia          #+#    #+#              #
-#    Updated: 2018/11/18 17:00:33 by qlouisia         ###   ########.fr        #
+#    Updated: 2018/12/05 12:01:10 by qlouisia         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,7 +81,8 @@ SRCS = $(SRCDIR)ft_strlen.c \
 	   $(SRCDIR)ft_get_int_size.c\
 	   $(SRCDIR)ft_power.c\
 	   $(SRCDIR)ft_list_len.c\
-	   $(SRCDIR)ft_lst_search.c
+	   $(SRCDIR)ft_lst_search.c\
+	   $(SRCDIR)get_next_line.c
 
 INCLUDE = $(INCDIR)libft.h 
 
