@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qlouisia <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: qlouisia <qlouisia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 11:42:52 by qlouisia          #+#    #+#             */
-/*   Updated: 2018/12/05 12:01:03 by qlouisia         ###   ########.fr       */
+/*   Updated: 2018/12/09 17:40:22 by qlouisia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,4 +101,8 @@ int					ft_power(long int nb, int power);
 int					ft_list_len(t_list **alst);
 int					lst_search(t_list **alst, void *content, size_t len);
 int					get_next_line(const int fd, char **line);
+int					ft_strn_is(char *str, char *charset, size_t n);
+int					ft_strnb_c(char *str, char c);
+
+
 #endif
