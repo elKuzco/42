@@ -6,11 +6,9 @@
 /*   By: qlouisia <qlouisia@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/09 11:45:54 by qlouisia          #+#    #+#             */
-/*   Updated: 2018/12/09 11:47:09 by qlouisia         ###   ########.fr       */
+/*   Updated: 2018/12/18 18:59:17 by qlouisia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include "libft.h"
 
 int	ft_strnb_c(char *str, char c)
 {
